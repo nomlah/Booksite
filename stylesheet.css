@@ -1,0 +1,181 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td { margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent; }
+body { line-height:1; }
+ol,ul { list-style:none; }
+blockquote,q { quotes:none; }
+blockquote:before,blockquote:after,q:before,q:after { content:'';content:none; }
+ins { text-decoration:none; }
+del { text-decoration:line-through; }
+table { border-collapse:collapse;border-spacing:0; }
+
+body {
+	background: /* #c0c6c9 */ #b5d1e6;
+	color: #292929;
+	color: rgba(0, 0, 0, 0.82);
+	font: normal 100% Cambria, Georgia, serif;
+	-moz-text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+	-webkit-text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+	-webkit-text-size-adjust: none;
+}
+a {
+	color: #29afec;
+	text-decoration: none;
+	-moz-transition: 0.35s color linear;
+	-webkit-transition: 0.35s color linear;
+	transition: 0.35s color linear;
+	-moz-text-shadow: 0 1px 0 rgba(55, 59, 61, 0.8);
+	-webkit-text-shadow: 0 1px 0 rgba(55, 59, 61, 0.8);
+	text-shadow: 0 1px 0 rgba(55, 59, 61, 0.8);
+	-webkit-text-size-adjust: none;
+}
+li a:hover {
+	color: #1084b8;
+	background-color: #ced2d5;
+	width: 95%;
+
+}
+#page {
+	background: url("main-bg.gif") repeat-x;
+	padding: 1em 0 0 0;
+}
+
+.inner {
+	margin: 0 auto;
+	width: 93.75%;		/* 960px / 1024px - comment */
+}
+img {
+	max-width: 100%;
+}
+
+
+.amp {
+	font-family: Garamond, "Times New Roman", serif;
+	font-style: italic;
+	font-weight: normal;
+}
+.sidebar, nav {
+	float: left;
+	width: 31.875%;	/* 306px / 960px */
+}
+h1 {
+	/*background: url("logo-bg.gif") no-repeat */50%;
+	/*padding-bottom: 5%;*/
+}
+h1 a, #logo {
+	padding-top: 10%;
+	height: 16.2%;
+	display: block;
+	text-align: center;
+}
+
+#logo {
+	opacity: 0.6;
+}
+
+.intro,
+.main,
+.footer {
+	float: right;
+	width: 65.9375%;	/* 633px / 960px */
+/*	position:absolute; */
+}
+.intro {
+	margin-top: 100px;
+}
+.intro div {
+	line-height: 1.4;
+}
+ul.nav {
+	border-top: 1px solid #888583;
+	margin: 2em auto 0;
+	width: 64.379%;
+ 	-moz-text-shadow: 0 1px 0 rgba(55, 59, 61, 0.8);
+	-webkit-text-shadow: 0 1px 0 rgba(55, 59, 61, 0.8);
+	text-shadow: 0 1px 0 rgba(55, 59, 61, 0.8);
+	-webkit-text-size-adjust: none;
+}
+ul.nav a {
+	background: url("site/ornament.png") no-repeat 0 100%;
+	font: bold 14px/1.2 "Book Antiqua", "Palatino Linotype", Georgia, serif;
+	display: block;
+	text-align: center;
+	letter-spacing: 0.1em;
+	padding: 1em 0.5em 3em;
+	margin-bottom: -1em;
+	text-transform: uppercase;
+}
+ul.nav a:hover {
+	background-position: 50% 100%;
+}
+li.first a {
+	border-top: 1px solid #FFF9EF;
+	padding-top: 1.25em;
+}
+ul.nav i {
+	font: normal 1.2em "Palatino Linotype", "Book Antiqua", "Times New Roman", serif;
+	display: block;
+	font-style: italic;
+	letter-spacing: 0.05em;
+	text-transform: capitalize;
+}
+.intro h2 {
+	font: normal 2em  Garamond, "Times New Roman", serif;
+	text-align: center;
+	margin-bottom: 0.25em;
+}
+.main h2 {
+	/*background: url("site/ornament.png") no-repeat 0*/ 50%;
+	font-size: 1.4em;
+	text-transform: lowercase;
+	text-align: center;
+	margin: 0.75em 0 1em;
+}
+.main h2 b, .main p {
+	/*background: url("site/bg.png");*/
+	font-weight: normal;
+	padding: 1em;
+}
+
+.main p strong {
+	float:right;
+	padding-right: 10%;
+}
+
+.footer {
+	background: 50% 0 repeat-x;
+	background-image: url("foot-bg.gif"); 
+	font-size: 12px;
+	text-align: center;
+	opacity: 0.9;
+	margin-top: 10%;
+	padding-top: 5%;
+}
+/*.footer p {
+	margin-bottom: 0.5em;
+}*/
+@media (max-width: 600px) {
+	/* 633px grid (88x6 col, 21x5 gut; 88+21+88+21+88+21+88+21+88+21+88) */
+	.inner {
+		position: relative;
+	}
+	.sidebar,
+	.intro,
+	.main,
+	.footer {
+		float: none;
+		width: auto;
+		/*padding-top:15%;*/
+	}
+	.intro,
+	.main {
+		margin-top: 10%;
+	}
+	img {
+		width: 40%;
+	}
+
+	#page {
+		padding: 1em 0 0 0;
+	}
+}
+</style>
